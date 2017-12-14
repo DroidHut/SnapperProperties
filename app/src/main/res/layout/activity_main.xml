@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.shivani.aspire1.MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#424242">
+            
+        </android.support.v7.widget.Toolbar>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#424242"
+            app:tabGravity="fill"
+            app:tabPadding="5dp"
+            android:elevation="10dp"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="3dp"
+            app:tabMode="fixed"
+            app:tabTextColor="#aeaeae"
+            app:tabSelectedTextColor="@color/white"></android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+    
+<android.support.v4.view.ViewPager
+    android:id="@+id/container"
+    android:layout_marginTop="116dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"></android.support.v4.view.ViewPager>
+  
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textSize="15dp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <RadioButton
+                    android:id="@+id/radioBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Very Nice"
+                    android:checked="true"
+                    android:typeface="monospace"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:buttonTint="@color/colorAccent"/>
+                <RadioButton
+                    android:id="@+id/radioBtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Good"
+                    android:typeface="monospace"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:buttonTint="@color/colorAccent"/>
+            </LinearLayout>
+            <RadioButton
+                android:id="@+id/radioBtn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Android is Awesome...."
+                android:typeface="monospace"
+                android:layout_marginTop="5dp"
+                android:checked="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:buttonTint="@color/colorAccent"/>
+        </RadioGroup>
+  
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CheckBox"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I am simple CheckBox"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:typeface="monospace"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/colorPrimary"></CheckBox>
+
+       
+        <CheckedTextView
+            android:id="@+id/checkedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:checked="false"
+            android:typeface="monospace"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="5dp"
+            android:textDirection="firstStrong"
+            android:checkMarkTint="@color/colorAccent"
+            android:text="CheckedTextView"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:checkMark="@drawable/unchecked"/>
+       
+
+    </LinearLayout>
+</ScrollView>
